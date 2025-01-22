@@ -7,17 +7,21 @@ export default function Header() {
 
       <nav>
         <ul className="flex gap-[55px]">
-          <li>
-            <a href="#">How it works</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Support</a>
-          </li>
+          <Link>How it works</Link>
+          <Link>Blog</Link>
+          <Link>Support</Link>
         </ul>
       </nav>
     </header>
+  );
+}
+
+function Link({ target = "#", children }) {
+  return (
+    <li>
+      <a href={target} className="font-medium text-2xl">
+        {children}
+      </a>
+    </li>
   );
 }
