@@ -16,10 +16,10 @@ export default function Header() {
   );
 }
 
-function Link({ target = "#", children }) {
+function Link({ href = "#", children }) {
   return (
     <li>
-      <a href={target} className="font-medium text-2xl">
+      <a href={href} className="font-medium text-2xl">
         {children}
       </a>
     </li>

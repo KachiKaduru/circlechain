@@ -5,13 +5,13 @@ export default function MarketCard({ token }) {
 
   return (
     <div className={styles.card}>
-      <div className=" flex">
+      <div className="flex gap-3 items-center rounded-[18px]">
         <img src={icon} alt="token" />
         <p className="font-semibold text-lg">{symbol}</p>
 
         <p className="font-semibold text-xs uppercase">{name}</p>
 
-        <p>&rarr;</p>
+        <p className="">&rarr;</p>
       </div>
 
       <div>
