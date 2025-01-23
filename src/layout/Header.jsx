@@ -6,18 +6,18 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
-    setIsOpen((open) => !open);
+    // setIsOpen((open) => !open);
   }
 
   return (
     <header className="flex justify-between items-center">
       <Logo />
 
-      <div className={`${isOpen ? "hidden" : "block"} sm:hidden`} onClick={handleClick}>
+      <div className={`${isOpen ? "hidden" : "block"} md:hidden`} onClick={handleClick}>
         <HamburgerIcon />
       </div>
 
-      <nav className={`${isOpen ? "block open" : "hidden"} sm:block `}>
+      <nav className={`${isOpen ? "block open" : "hidden"} md:block `}>
         <ul className="flex gap-[55px]">
           <Link>How it works</Link>
           <Link>Blog</Link>

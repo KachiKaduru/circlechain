@@ -5,7 +5,7 @@ export default function MarketCard({ token }) {
   const { name, symbol, icon, price, rate } = token;
 
   return (
-    <div className={`${styles.card} rounded-[18px] w-fit`}>
+    <div className={`${styles.card} rounded-[18px] max-w-[292px]`}>
       <div className="flex gap-3 items-center border-b border-b-red pb-4">
         <img src={icon} alt="token" />
         <p className="font-semibold text-lg">{symbol}</p>
