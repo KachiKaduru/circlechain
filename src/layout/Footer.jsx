@@ -32,7 +32,7 @@ export default function Footer() {
         <div>
           <Heading>Social media</Heading>
 
-          <span className="flex gap-7 w-fit mx-auto">
+          <span className="flex gap-7 w-fit mx-auto flex-wrap">
             <FacebookIcon />
             <InstagramIcon />
             <LinkedinIcon />

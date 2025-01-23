@@ -5,7 +5,7 @@ export default function Features() {
   return (
     <section className="flex flex-col gap-7 mb-24">
       <div className="text-center">
-        <h1 className="font-bold text-base sm:text-5xl mb-3">
+        <h1 className="font-bold text-base sm:text-3xl md:text-5xl mb-3">
           Global Decentralize currency based on blockchain technology
         </h1>
 

@@ -8,7 +8,7 @@ export default function MarketTrends() {
         Market Trend
       </h2>
 
-      <div className="flex flex-col items-center gap-[50px] md:flex-row">
+      <div className="flex flex-col items-center gap-[50px] md:gap-6 md:flex-row md:flex-wrap">
         {tokens.map((token, index) => (
           <MarketCard token={token} key={index} />
         ))}

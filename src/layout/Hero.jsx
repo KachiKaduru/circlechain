@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <section className="grid gap-12 pt-[74px] pb-[110px] md:grid-cols-[0.6fr_0.4fr]">
       <div className="text-center md:text-left">
-        <h1 className="font-bold text-[32px] sm:text-7xl mb-1">
+        <h1 className="font-bold text-[32px] sm:text-5xl  md:text-7xl mb-1">
           Save, Buy and Sell Your blockchain asset
         </h1>
 
-        <p className="font-medium text-xl sm:text-4xl mb-12">
+        <p className="font-medium text-xl sm:text-3xl md:text-4xl mb-12">
           The easy to manage and trade your cryptocurency asset
         </p>
 
