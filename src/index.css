@@ -5,6 +5,21 @@
 * {
   outline: none;
 }
+
+.open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  width: 50%;
+  background-color: #010010d8;
+  color: white;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* body {
   font-family: "Montserrat", sans-serif;
 } */

@@ -9,12 +9,12 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="pb-6">
-      <section className="flex flex-col gap-8 items-center mb-24">
-        <div>
+    <footer className="pb-6 md:pt-24 md:pb-16">
+      <section className="flex flex-col gap-8 items-center mb-24 md:grid md:grid-cols-3 md:items-start">
+        <div className="grid gap-8">
           <Logo className="justify-center" />
 
-          <p className="font-bold text-xl text-center">
+          <p className="font-bold text-xl text-center md:text-left">
             Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint. Velit officia
             consequatduis enim velit mollit. Exercitation veniamconsequat sunt nostrud amet.
           </p>
@@ -22,7 +22,7 @@ export default function Footer() {
 
         <div className="mb-6">
           <Heading>Quick links</Heading>
-          <ul className="flex flex-col gap-8">
+          <ul className="flex flex-col gap-8 md:items-start md:w-fit md:mx-auto">
             <Link>How it works</Link>
             <Link>Blog</Link>
             <Link>Support</Link>
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
       </section>
 
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center md:justify-end">
         <p>&copy; 2022 Circlechain</p>
       </div>
     </footer>
