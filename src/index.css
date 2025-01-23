@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  outline: none;
+}
 /* body {
   font-family: "Montserrat", sans-serif;
 } */

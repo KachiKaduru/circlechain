@@ -4,7 +4,7 @@ import { tokens } from "../helpers/data";
 export default function MarketTrends() {
   return (
     <section>
-      <h2 className="font-bold text-5xl">Market Trend</h2>
+      <h2 className="font-bold text-4xl sm:text-5xl text-center">Market Trend</h2>
 
       <div>
         {tokens.map((token, index) => (

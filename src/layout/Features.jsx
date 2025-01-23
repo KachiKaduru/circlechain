@@ -1,37 +1,25 @@
+import { features } from "../helpers/data";
 import featuresImg from "../images/Illustration.png";
-
-const features = [
-  {
-    heading: "Access Token Market",
-    subheading: "Buy and sell token anytime and anywhere",
-  },
-  {
-    heading: "User Friendly Interface ",
-    subheading: "Easy to navigate",
-  },
-  {
-    heading: "Ownership Token control",
-    subheading: "Be in control and own as many asset as possible",
-  },
-];
 
 export default function Features() {
   return (
-    <section>
+    <section className="flex flex-col gap-7 mb-24">
       <div className="text-center">
-        <h1 className="font-bold text-5xl">
+        <h1 className="font-bold text-base sm:text-5xl mb-3">
           Global Decentralize currency based on blockchain technology
         </h1>
 
-        <p className="text-xl text-green">Web3 is the latest efficient technology</p>
+        <p className="font-medium text-xs sm:text-xl text-green ">
+          Web3 is the latest efficient technology
+        </p>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-col gap-[74px]">
         <div>
           <img src={featuresImg} alt="Illustration" />
         </div>
 
-        <div>
+        <div className="flex flex-col gap-7">
           {features.map((feature, index) => (
             <Feature key={index} heading={feature.heading} subheading={feature.subheading} />
           ))}
@@ -43,9 +31,13 @@ export default function Features() {
 
 function Feature({ heading, subheading }) {
   return (
-    <div className="bg-gradient-to-r from-[#C4C4C400] to-green rounded-xl">
-      <h4 className="font-bold text-[32px]">{heading}</h4>
-      <p className="font-medium text-xl text-dark">{subheading}</p>
+    <div className="bg-gradient-to-r from-[#C4C4C400] to-green rounded-xl py-1 px-3 flex items-end">
+      <div className=" w-[70%] ml-auto text-right">
+        <h4 className="font-bold text-base sm:text-[32px]">{heading}</h4>
+        <p className="font-medium text-sm sm:text-xl text-dark w-[87%] ml-auto text-center">
+          {subheading}
+        </p>
+      </div>
     </div>
   );
 }

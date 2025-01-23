@@ -27,3 +27,18 @@ export const tokens = [
     rate: "0.03%",
   },
 ];
+
+export const features = [
+  {
+    heading: "Access Token Market",
+    subheading: "Buy and sell token anytime and anywhere",
+  },
+  {
+    heading: "User Friendly Interface ",
+    subheading: "Easy to navigate",
+  },
+  {
+    heading: "Ownership Token control",
+    subheading: "Be in control and own as many asset as possible",
+  },
+];

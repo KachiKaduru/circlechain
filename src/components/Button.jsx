@@ -1,3 +1,5 @@
+// const types = [{ primary: "bg-white", secondary: "bg-[#BBFFFF]", subscribe: "bg-green" }];
+
 export default function Button({ type = "primary", children }) {
   return (
     <button

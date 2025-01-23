@@ -3,15 +3,17 @@ import heroImg from "../images/hero-img.png";
 
 export default function Hero() {
   return (
-    <section>
-      <div>
-        <h1 className="font-bold text-7xl">Save, Buy and Sell Your blockchain asset</h1>
+    <section className="grid gap-12 pt-[74px] pb-[110px]">
+      <div className="text-center">
+        <h1 className="font-bold text-[32px] sm:text-7xl mb-1">
+          Save, Buy and Sell Your blockchain asset
+        </h1>
 
-        <p className="font-medium text-4xl">
+        <p className="font-medium text-xl sm:text-4xl mb-12">
           The easy to manage and trade your cryptocurency asset
         </p>
 
-        <div>
+        <div className="grid gap-7 justify-center">
           <Button type="secondary">Connect Wallet</Button>
           <Button type="primary">Start Trading</Button>
         </div>
