@@ -1,7 +1,8 @@
 .card {
   font-family: "Roboto";
   padding: 18px 21px;
-  box-shadow: 0 0 4px #73fdaae3;
+  border: 1px solid #010010;
+  box-shadow: 0px 0px 6px 3px #73fdaae3;
 
   img {
     width: 50px;

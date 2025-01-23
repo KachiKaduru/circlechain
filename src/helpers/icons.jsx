@@ -120,3 +120,17 @@ export const HamburgerIcon = () => {
     </svg>
   );
 };
+
+export const Arrow = () => {
+  return (
+    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M5.54593 1.08395L14.7383 1.79106M14.7383 1.79106L15.4454 10.9834M14.7383 1.79106L1.26165 15.2677"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
