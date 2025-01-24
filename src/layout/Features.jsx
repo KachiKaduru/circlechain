@@ -1,4 +1,5 @@
 import { features } from "../helpers/data";
+import ellipseImg from "../images/Ellipse 4.png";
 import featuresImg from "../images/Illustration.png";
 
 export default function Features() {
@@ -14,9 +15,15 @@ export default function Features() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-[74px] md:items-center md:flex-row">
-        <div>
+      <div className="grid gap-[74px] md:items-center lg:grid-cols-2">
+        <div className="relative">
           <img src={featuresImg} alt="Illustration" />
+
+          <img
+            src={ellipseImg}
+            alt=""
+            className="hidden lg:block absolute top-[-160px] left-[-100px]"
+          />
         </div>
 
         <div className="flex flex-col gap-7">
